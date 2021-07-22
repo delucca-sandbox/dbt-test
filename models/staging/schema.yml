@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+- name: conformed
+  description: This is a test of our staging
+  database: airbyte
+  schema: conformed
+  tables:
+  - name: okr__cycle

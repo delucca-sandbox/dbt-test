@@ -8,3 +8,4 @@ models:
   foo:
     staging:
       +materialized: view
+      +schema: staging

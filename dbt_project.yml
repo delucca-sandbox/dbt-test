@@ -1,11 +1,13 @@
-name: foo
+name: dbt_test
 version: 1.0.0
 config-version: 2
-target-path: target
 profile: normalize
 
 models:
-  foo:
+  dbt_test:
     staging:
-      +materialized: view
       +schema: staging
+    data_marts:
+      +materialized: table
+      okr:
+        +schema: dm_okr
